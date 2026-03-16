@@ -1,6 +1,6 @@
-# SecureScan
+# Secure Check
 
-SecureScan is a web vulnerability scanner that analyzes websites for security misconfigurations.
+Secure Check is a web vulnerability scanner that analyzes websites for security misconfigurations.
 
 ## Live Demo
 https://secure-scan-kappa.vercel.app
