@@ -12,11 +12,11 @@ If port is 5000,
 your backend is available at:
 
 http://localhost:5000*/
-const rateLimit = require("express-rate-limit");
-const scanRoutes = require("./routes/scan");
-const express = require('express');
+import rateLimit from "express-rate-limit";
+import scanRoutes from "./scan.js";
+import express from 'express';
 // we are importing express module to create a server
-const cors = require('cors'); // importing cors package 
+import cors from 'cors'; // importing cors package 
 const app = express();
 // we are creating our server
 app.use(cors({ origin: "*" }));// .use() means apply this setting to every request

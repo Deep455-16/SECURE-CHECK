@@ -7,10 +7,10 @@ It does NOT do scanning.
 It just forwards. */
 // routes/scan.js
 
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
-const { scanWebsite } = require("../services/scanner");
+import { scanWebsite } from "./scanner.js";
 
 router.post("/scan", async (req, res) => {
     let { url } = req.body;
@@ -34,4 +34,4 @@ router.post("/scan", async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

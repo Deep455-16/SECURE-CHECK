@@ -12,8 +12,8 @@ Returns report*/
 
 // services/scanner.js
 
-const axios = require("axios");
-const dns = require("dns").promises;
+import axios from "axios";
+import dns from "dns/promises";
 
 function isPrivateIP(ip) {
     return (
@@ -120,4 +120,4 @@ async function scanWebsite(url) {
     return report;
 }
 
-module.exports = { scanWebsite };
+export { scanWebsite };
