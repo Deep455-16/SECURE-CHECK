@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Shield, ShieldAlert, ShieldCheck, Download, Search, Settings2, Clock, Trash2, ShieldBan, Info } from 'lucide-react'
 import axios from 'axios'
