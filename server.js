@@ -36,8 +36,12 @@ app.get("/", (req, res) => {
 });
 // this creates a route 
 app.use("/api",scanLimiter,scanRoutes);
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
-// start listening for requests
+// start listening for requests only if not in a Vercel environment
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => {
+        console.log(`Server running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;

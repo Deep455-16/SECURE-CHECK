@@ -53,7 +53,7 @@ function App() {
     setResult(null)
 
     try {
-      const response = await axios.post("http://localhost:5000/api/scan", { url })
+      const response = await axios.post("/api/scan", { url })
       const data: ScanResult = response.data
       data.timestamp = Date.now()
       setResult(data)
