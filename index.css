@@ -8,9 +8,11 @@
   }
 }
 
-/* Glassmorphism utility */
-.glass-panel {
-  @apply bg-panel/70 backdrop-blur-md border border-white/10 shadow-xl;
+@layer components {
+  /* Glassmorphism utility */
+  .glass-panel {
+    @apply bg-panel/70 backdrop-blur-md border border-white/10 shadow-xl;
+  }
 }
 
 /* Custom Scrollbar */
