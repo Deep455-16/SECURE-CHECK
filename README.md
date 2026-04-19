@@ -3,7 +3,7 @@
 Secure Check is a web vulnerability scanner that analyzes websites for security misconfigurations.
 
 ## Live Demo
-https://secure-scan-kappa.vercel.app
+secure-check-nu.vercel.app
 
 ## Features
 - Security header analysis
